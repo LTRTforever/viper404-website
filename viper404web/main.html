@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viper404 - Principal</title>
+  <style>
+    body {
+      background: #121212;
+      color: #eee;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    nav {
+      background: #1e1e1e;
+      border-bottom: 2px solid #ff0040;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem 0;
+      user-select: none;
+    }
+    nav a.nav-link {
+      color: #ff0040;
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    nav a.nav-link:hover,
+    nav a.nav-link.active {
+      background: #ff0040;
+      color: #121212;
+      box-shadow: 0 0 10px #ff0040;
+    }
+    nav a.active {
+      pointer-events: none;
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .secretCard {
+      background: #1a1a1a;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .secretCard strong {
+      color: #ff0040;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="profile.html" class="nav-link">Perfil</a>
+    <a href="secrets.html" class="nav-link">Secretos</a>
+    <a href="help.html" class="nav-link">Ayuda</a>
+  </nav>
+
+  <main>
+    <div class="secretCard"><strong>Secreto #1:</strong><p>El alcalde recibe sobornos cada mes.</p></div>
+    <div class="secretCard"><strong>Secreto #2:</strong><p>Se oculta un cuerpo bajo la iglesia vieja.</p></div>
+    <!-- Aquí puedes añadir más secretos o contenido -->
+  </main>
+</body>
+</html>
